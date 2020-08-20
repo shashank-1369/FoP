@@ -6,15 +6,19 @@ class Superhero:
 
     # Superhero class represents the facts related to a superhero.
 
-    def __init__(self, name="", strenthPts=0, ):
+    def __init__(self, name = "", strenthPts=0, sigAbility = "", secondaryAbility = "" ):
 
         # creates the superhero name and strenghtPts attributes
 
         self.name = name
         self.strenghtPts = strenthPts
+        self.sigAbility = sigAbility
+        self.secondaryAbility = secondaryAbility
 
     def addStrengthPts(self, points):
 
         # adds points to the superhero's strengths
 
         self.strenghtPts = self.strenghtPts + points
+
+
