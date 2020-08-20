@@ -6,7 +6,7 @@ class Superhero:
 
     # Superhero class represents the facts related to a superhero.
 
-    def __init__(self, name="", strenthPts=0):
+    def __init__(self, name="", strenthPts=0, ):
 
         # creates the superhero name and strenghtPts attributes
 
