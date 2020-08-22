@@ -6,7 +6,7 @@ class Superhero:
 
     # Superhero class represents the facts related to a superhero.
 
-    def __init__(self, name = "", strenthPts=0, sigAbility = "", secondaryAbility = "" ):
+    def __init__(self, name = "", strenthPts=0, sigAbility = "", secondaryAbility = "", xpLevel=99 ):
 
         # creates the superhero name and strenghtPts attributes
 
@@ -14,6 +14,7 @@ class Superhero:
         self.strenghtPts = strenthPts
         self.sigAbility = sigAbility
         self.secondaryAbility = secondaryAbility
+        self.xpLevel = xpLevel
 
     def addStrengthPts(self, points):
 
@@ -21,15 +22,11 @@ class Superhero:
 
         self.strenghtPts = self.strenghtPts + points
 
-    def userInput(self, sigAbility, secondaryAbility):
+    def addXpLevel(self, xp):
 
-    	# allows the user to input and control how the superhero reacts to the oppenent he/she is fighting
+    	# adds experience levels to the superhero
 
-    	if(userIn == "Blaze"):
-    		print(newSuperhero.sigAbility)
-
-    	elif(userIn == "Hot Hands"):
-    		print(newSuperhero.secondaryAbility)
+    	self.xpLevel = self.xpLevel + xp
 
 def main():
 
@@ -48,12 +45,29 @@ def main():
     	print(newVillain.name+" also has a secondary ability called "+newVillain.secondaryAbility+".")
     	print("Looks like Omen has sent a "+newVillain.secondaryAbility+ " towards "+newSuperhero.name+" to disrupt his senses.")
     	print("It is crucial that "+newSuperhero.name+" makes the right decision!")
-    	print("Can you help him decide if he should use his signature ability, "+newSuperhero.sigAbility+" or his secandary ability, "+newSuperhero.secondaryAbility+"?")
-    	userIn = input("Please input 'Blaze' to use his signature ability or 'Hot Hands' to use his secondary ability.")
+    	print(newSuperhero.name+" shoots his "+newSuperhero.sigAbility+" towards "+newVillain.name+" and does damage worth 100 HP! ")
+    	print("Phoenix has done it again")  
+    	print("Phoenix has been awarded :")	
 
-    	# call the userInput function
-    	newSuperhero.userInput()
+    	# calls the addStrengthPts function and adds 100 points
 
+    	newSuperhero.addStrengthPts(100)
+
+    	# prints the number of strength points after the addition of the duel
+
+    	print(str(newSuperhero.strenghtPts)+" Strength Points")
+
+    	print("Phoenix has also been promoted to the")
+
+    	# calls the xpLevel function and adds 1 xp level to it
+
+    	newSuperhero.addXpLevel(1)
+
+    	print(str(newSuperhero.xpLevel)+"th Experience Level")
+
+    	# prints the final line of the program
+
+    	print("This makes Phoenix the most experienced and strongest superhero!")
 
 
 main()
