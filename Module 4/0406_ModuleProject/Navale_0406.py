@@ -27,7 +27,8 @@ def main():
 		print("Your Application has been accepted!")
 
 	else:
-		print("Sorry, you must be over 14 years of age and must confirm with 'Y' to our student and participation requirements")
+		print("Sorry, you must be over 14 years of age and must confirm with 'Y' to our student and participation requirements for your application to be accepted")
 
 
 main()
+
