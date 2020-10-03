@@ -19,7 +19,7 @@ def main():
 	print("Full Name: "+userName)
 	print("Age: "+str(userAge))
 	print("Student Confirmation: "+studentConfirmation)
-	print("Particpation Confirmation: "+participationConfirmation)
+	print("Participation Confirmation: "+participationConfirmation)
 
 	# check if user is eligibile to apply
 	
