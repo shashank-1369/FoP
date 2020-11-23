@@ -8,7 +8,7 @@ def main():
 
     playerInput = input("Please enter R for Rock, P for Paper and S for Scissors")
     
-    x = 0
+    x = 100
 
     while (x == 0):
         if (playerInput == "R"):
