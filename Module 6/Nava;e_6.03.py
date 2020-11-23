@@ -10,7 +10,7 @@ def main():
     
     x = 100
 
-    while (x == 0):
+
         if (playerInput == "R"):
             
             print("Your input: Rock")
@@ -24,5 +24,7 @@ def main():
             print("Your input: Scissors")
             print("Computer's Input: Rock")
     print("You loose! Try again!")
+
+    x = x+1
 
 main()
